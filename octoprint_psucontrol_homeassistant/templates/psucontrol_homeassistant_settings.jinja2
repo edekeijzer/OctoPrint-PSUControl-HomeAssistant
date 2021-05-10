@@ -1,0 +1,30 @@
+<form class="form-horizontal">
+    <h4>General</h4>
+    <div class="control-group">
+        <label class="control-label">Address</label>
+        <div class="controls">
+            <input type="text" class="input" data-bind="value: settings.plugins.psucontrol_homeassistant.address">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">API key</label>
+        <div class="controls">
+            <input type="text" class="input" data-bind="value: settings.plugins.psucontrol_homeassistant.api_key">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Entity ID</label>
+        <div class="controls">
+            <input type="text" class="input" data-bind="value: settings.plugins.psucontrol_homeassistant.entity_id">
+            <br/>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <label class="checkbox">
+            <input type="checkbox" data-bind="checked: settings.plugins.psucontrol_homeassistant.verify_certificate"> Verify certificate
+            </label>
+            <br/>
+        </div>
+    </div>
+</form>
