@@ -11,7 +11,7 @@ Adds Home Assistant support to OctoPrint-PSUControl as a sub-plugin
 * Go to your Home Assistant profile
 * At the bottom, go to *Long-Lived Access Tokens*
 * Click *Create Token*, give the token a name (suggestion: OctoPrint PSUControl) and click *OK*
-* Copy the token and paste it into the *API key* field in the plugin settings
+* Copy the token and paste it into the *Access token* field in the plugin settings
 * At *Entity ID* enter the ID of the Home Assistant entity you want to control (for example: *switch.my_smart_outlet*)
 * If your HA installation is running HTTPS with a self-signed certificate, uncheck the *Verify certificate* option
 
