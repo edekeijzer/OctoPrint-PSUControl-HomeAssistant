@@ -7,6 +7,9 @@ __copyright__ = "Copyright (C) 2021 Erik de Keijzer - Released under terms of th
 
 import octoprint.plugin
 import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 class PSUControl_HomeAssistant(octoprint.plugin.StartupPlugin,
                          octoprint.plugin.RestartNeedingPlugin,
