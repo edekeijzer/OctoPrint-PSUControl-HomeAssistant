@@ -19,5 +19,5 @@ Adds Home Assistant support to OctoPrint-PSUControl as a sub-plugin
 Please check your logs first. If they do not explain your issue, open an issue in GitHub. Please set *octoprint.plugins.psucontrol* and *octoprint.plugins.psucontrol_homeassistant* to **DEBUG** and include the relevant logs. Feature requests are welcome as well.
 
 ## Todo
-- [ ] Add descriptions to settings page
+- [x] Add descriptions to settings page
 - [ ] Add images to documentation
