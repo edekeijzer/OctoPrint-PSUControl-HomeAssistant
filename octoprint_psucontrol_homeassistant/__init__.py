@@ -43,7 +43,7 @@ class PSUControl_HomeAssistant(octoprint.plugin.StartupPlugin,
 
     def on_startup(self, host, port):
         psucontrol_helpers = self._plugin_manager.get_helpers("psucontrol")
-        if 'register_plugin' not in psucontrol_helpers.keys():
+        if not psucontrol_helpers or 'register_plugin' not in psucontrol_helpers.keys():
             self._logger.warning("The version of PSUControl that is installed does not support plugin registration.")
             return
 
