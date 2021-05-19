@@ -6,7 +6,7 @@ import setuptools
 plugin_identifier = "psucontrol_homeassistant"
 plugin_package = "octoprint_%s" % plugin_identifier
 plugin_name = "OctoPrint-PSUControl-HomeAssistant"
-plugin_version = "1.0.2"
+plugin_version = "1.0.3"
 plugin_description = "Adds Home Assistant support to OctoPrint-PSUControl as a sub-plugin"
 plugin_author = "Erik de Keijzer"
 plugin_author_email = "erik.de.keijzer@gmail.com"
