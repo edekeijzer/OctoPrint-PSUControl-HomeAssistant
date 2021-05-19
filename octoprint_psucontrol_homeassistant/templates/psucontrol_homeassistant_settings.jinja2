@@ -1,7 +1,12 @@
 <!-- ko ifnot: settings.plugins.psucontrol -->
 <span class="help-inline label label-important">This plugin requires <a href="https://plugins.octoprint.org/plugins/psucontrol/" target="_blank">PSU Control</a> in order to function. It can be installed from the Plugin Manager.</span>
 <!-- /ko -->
-
+<!-- ko if: settings.plugins.psucontrol && !(settings.plugins.psucontrol.switchingMethod() === "PLUGIN" && settings.plugins.psucontrol.switchingPlugin() === "psucontrol_homeassistant") -->
+    <span class="help-inline label label-important">Please set the switching method to <b>PLUGIN</b> and the switching plugin to <b>PSU Control - HomeAssistant</b> in the PSU Control settings to use this plugin.</span>
+<!-- /ko -->
+<!-- ko if: settings.plugins.psucontrol && !(settings.plugins.psucontrol.sensingMethod() === "PLUGIN" && settings.plugins.psucontrol.sensingPlugin() === "psucontrol_homeassistant") -->
+    <span class="help-block label label-important">Please set the sensing method to <b>PLUGIN</b> and the sensing plugin to <b>PSU Control - HomeAssistant</b> in the PSU Control settings to use this plugin.</span>
+<!-- /ko -->
 <form class="form-horizontal">
     <h4>PSU Control - HomeAssistant settings</h4>
     <div class="control-group">
