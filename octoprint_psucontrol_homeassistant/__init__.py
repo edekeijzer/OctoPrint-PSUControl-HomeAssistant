@@ -95,6 +95,8 @@ class PSUControl_HomeAssistant(octoprint.plugin.StartupPlugin,
             _entity_id = _domain + '.' + _entity_id
         else:
             _domain = _entity_id[:_domainsplit]
+            # Groups don't have turn_on/off/toggle services
+            if _domain == 'group': _domain = 'homeassistant'
 
         if state:
             cmd = '/services/' + _domain + '/turn_' + state
