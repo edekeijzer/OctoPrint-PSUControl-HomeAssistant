@@ -5,7 +5,7 @@ Adds Home Assistant support to OctoPrint-PSUControl as a sub-plugin
 - Install the plugin using Plugin Manager from Settings
 - Configure this plugin
 - Select this plugin as Switching *and* Sensing method in [PSU Control](https://github.com/kantlivelong/OctoPrint-PSUControl)
-- **Turn off** the *Automatically turn PSU ON* option in the PSU Control settings, leaving this on will ruin your prints when Home Assistant becomes unavailable
+- :warning: **Turn off** the *Automatically turn PSU ON* option in the PSU Control settings, leaving this on will ruin your prints when Home Assistant becomes unavailable :warning:
 
 ## Configuration
 * Enter the URL of your Home Assistant Installation
