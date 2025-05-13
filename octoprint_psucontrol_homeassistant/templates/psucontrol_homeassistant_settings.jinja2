@@ -7,6 +7,7 @@
 <!-- ko if: settings.plugins.psucontrol && !(settings.plugins.psucontrol.sensingMethod() === "PLUGIN" && settings.plugins.psucontrol.sensingPlugin() === "psucontrol_homeassistant") -->
     <span class="help-block label label-important">Please set the sensing method to <b>PLUGIN</b> and the sensing plugin to <b>PSU Control - HomeAssistant</b> in the PSU Control settings to use this plugin.</span>
 <!-- /ko -->
+<!-- ko ifnot: settings.plugins.psucontrol.autoOn() -->
 <form class="form-horizontal">
     <h4>PSU Control - HomeAssistant settings</h4>
     <div class="control-group">
@@ -44,3 +45,8 @@
         </div>
     </div>
 </form>
+<!-- /ko -->
+<!-- ko if: settings.plugins.psucontrol.autoOn() -->
+<span class="help-inline label label-important">Please DISABLE <u>Automatically turn PSU ON</u> in the PSU Control settings, it will otherwise ruin your prints when HA becomes unavailable.<br>
+See <a href="https://github.com/edekeijzer/OctoPrint-PSUControl-HomeAssistant#setup" target="_blank">setup</a> for more info.</span>
+<!-- /ko -->
